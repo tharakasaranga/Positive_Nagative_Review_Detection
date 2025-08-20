@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review Sentiment Analyzer</title>
+</head>
+<body>
+    <h2>Enter your Review</h2>
+    <form method="POST">
+        <input type="text" name="review" style="width:300px" required>
+        <button type="submit">Check Sentiment</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Result: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
